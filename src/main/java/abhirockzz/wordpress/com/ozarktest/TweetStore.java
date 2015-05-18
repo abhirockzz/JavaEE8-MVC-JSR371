@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package abhirockzz.wordpress.com.ozarktest;
 
 import java.util.ArrayList;
@@ -13,7 +9,7 @@ import javax.enterprise.context.ApplicationScoped;
 
 /**
  *
- * @author SAMSUNG
+ * @author @GET
  */
 @ApplicationScoped
 public class TweetStore {

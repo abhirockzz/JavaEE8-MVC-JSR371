@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package abhirockzz.wordpress.com.ozarktest;
 
 import javax.enterprise.context.RequestScoped;
@@ -10,10 +6,10 @@ import javax.inject.Named;
 
 /**
  *
- * @author SAMSUNG
+ * @author @GET
  */
-@RequestScoped
-@Named("tweet")
+//@RequestScoped
+//@Named("tweet")
 public class Tweet {
 
     public Tweet() {

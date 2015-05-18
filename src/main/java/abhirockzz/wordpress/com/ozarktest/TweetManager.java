@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package abhirockzz.wordpress.com.ozarktest;
 
 import com.oracle.ozark.core.Models;
@@ -17,7 +13,7 @@ import javax.ws.rs.core.Response;
 
 /**
  *
- * @author SAMSUNG
+ * @author Abhishek
  */
 @Path("ozark")
 @Controller
@@ -30,12 +26,33 @@ public class TweetManager {
     Models models;
     
     @GET
-    //@View("tweet.jsp")
-    public Response get(@QueryParam("hashtag") String hashtag){
-        models.put("tweet", store.get(hashtag).get(0));
-        System.out.println("fetching via Response....");
-        return Response.ok("tweet.jsp").build();
-        //return "tweet.jsp";
+    public String get0(@QueryParam("hashtag") String hashtag){
+        models.put("tweet", store.get(hashtag).get(0));  
+        return "tweet.jsp";
     }
+    
+    /*
+    Uncomment individual methods below to try out various options w.r.t
+    return types supported by MVC
+    */
+    
+//    @GET
+//    public Response get1(@QueryParam("hashtag") String hashtag){
+//        models.put("tweet", store.get(hashtag).get(0));
+//        return Response.ok("tweet.jsp").build();
+//        
+//    }
+    
+//    @GET
+//    public Viewable get2(@QueryParam("hashtag") String hashtag){
+//        models.put("tweet", store.get(hashtag).get(0));
+//        return new Viewable("tweet.jsp");
+//    }
+    
+//    @GET
+//    @View("tweet.jsp")
+//    public void get3(@QueryParam("hashtag") String hashtag){
+//        models.put("tweet", store.get(hashtag).get(0));
+//    }
     
 }
